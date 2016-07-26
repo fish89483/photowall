@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.album {
+    width: 100%;
+}
+
+.portrait {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+
+.landscape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+
+a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ccc;
+}
+
+.fade {
+    opacity: .7;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pic {
+        position: relative;
+        width: 20%;
+        height: 0;
+        padding-top: 20%;
+        float: left;
+    }
+    .pic:nth-child(21n+4){
+        width: 40%;
+        padding-top: 40%;
+        float: right;
+    }
+    
+   
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .pic {
+        position: relative;
+        width: 10%;
+        height: 0;
+        padding-top: 10%;
+        float: left;
+    }
+    .pic:nth-child(21n+3),
+    .pic:nth-child(21n+7),
+    .pic:nth-child(21n+18) {
+        width: 19.9%;
+        padding-top: 19.9%;
+    }
+    .pic:nth-child(21n+10),
+    .pic:nth-child(21n+12),
+    .pic:nth-child(21n+16),
+    .pic:nth-child(21n+18){
+        margin-top: -10%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .pic {
+        position: relative;
+        width: 10%;
+        height: 0;
+        padding-top: 10%;
+        float: left;
+    }
+    .pic:nth-child(24n+4),
+    .pic:nth-child(24n+8) {
+        width: 19.9%;
+        padding-top: 19.9%;
+    }
+    .pic:nth-child(24n+9),
+    .pic:nth-child(24n+11),
+    .pic:nth-child(24n+13),
+    .pic:nth-child(24n+17),
+    .pic:nth-child(24n+19),
+    .pic:nth-child(24n+21) {
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .pic {
+        position: relative;
+        width: 25%;
+        height: 0;
+        padding-top: 25%;
+        float: left;
+    }
+    .pic:nth-child(12n+1){
+        width: 75%;
+        padding-top: 75%;
+    }
+    
+    .pic:nth-child(12n+9){
+        width: 75%;
+        padding-top: 75%;
+        float: right;
+
+    }
+}
