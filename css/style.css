@@ -32,6 +32,7 @@ body{
 }
 
 a {
+    background-position: center;
     background-size: cover;
     display: block;
     position: absolute;
