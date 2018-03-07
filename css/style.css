@@ -32,7 +32,7 @@ body{
 }
 
 a {
-    background-color: #bbb
+    background-color: #bbb;
     background-position: center;
     background-size: cover;
     display: block;
