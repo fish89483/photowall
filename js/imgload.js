@@ -11,7 +11,7 @@
     var src =$(this).attr('src');
     console.log(src)
     $(this).parent('a').css("background-image","url("+src+")")
-    $(this).hide()
+    $(this).remove()
     
     
 });
