@@ -9,8 +9,13 @@
 
  $("img").each(function() {
     var src =$(this).attr('src');
-    console.log(src)
+	 
+    
     $(this).parent('a').css("background-image","url("+src+")")
+     if ($(this).complete) {
+                console.log(src)
+            }
+    
     $(this).remove()
     
     
