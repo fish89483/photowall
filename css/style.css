@@ -9,7 +9,11 @@ body{
 .album {
     width: 100%;
 }
-
+.album::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 .portrait {
     position: absolute;
     top: 0;
